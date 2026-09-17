@@ -1,77 +1,67 @@
-# My Portfolio
+# MD Oyasim Raja - Robotics & AI Engineer Portfolio
 
-Built on the same open-source template structure as AshishA26's GitHub Pages site
-(the "iPortfolio" Bootstrap template). Sections: Home / About / Experience / Projects.
+Welcome to the source code of my personal portfolio website! This repository contains the full HTML, CSS, and JavaScript source for my professional portfolio, highlighting my experience, technical skills, and projects in the field of AI, Robotics, and Sim-to-Real development.
 
-## What to edit
+## 🚀 Live Demo
+*(Your GitHub Pages URL will go here once deployed, e.g., https://oyasimraja1316.github.io/My_portfolio/)*
 
-Everything you need to change lives in **`index.html`** — search for `TODO` comments
-inside it. In short:
+## 🛠️ Technologies Used
+- **HTML5 & CSS3**
+- **Vanilla JavaScript**
+- **Bootstrap 5** (Layout and Grid)
+- **Vendor Libraries:** AOS (Animations), GLightbox (Image/Video Popups), Swiper (Carousels), Typed.js (Typing effects)
 
-1. **Header (sidebar)** — your name, headshot (`assets/img/profile-placeholder.png`),
-   GitHub/LinkedIn links.
-2. **Hero section** — your name + the typed "roles" text + resume link.
-3. **About section** — your bio paragraphs, two photos, and the 3 "focus area" cards.
-4. **Experience section** — one block per job/internship (duplicate the `timeline-row`
-   div for each).
-5. **Projects section** — one block per project (duplicate a `portfolio-item` div for
-   each). Filter buttons at the top are controlled by the `filter-*` classes on each item
-   — rename/add categories to match what you actually work on.
+---
 
-## Adding photos
+## 💻 Running the Portfolio Locally
 
-- Drop image files into `assets/img/` (for profile/about photos) or
-  `assets/img/projectPics/` (for project images), then update the `src="..."` paths in
-  `index.html` to match your filenames.
-- Click-to-enlarge works automatically via the `portfolio-lightbox` class — no JS
-  changes needed.
+You don't need any complex build steps or Node.js to run this locally! It is pure frontend code.
 
-## Adding videos
+1. Clone or download this repository.
+2. Open the folder in your terminal.
+3. Start a simple local server. If you have Python installed, you can use:
+   ```bash
+   python3 -m http.server 8000
+   ```
+4. Open your web browser and visit `http://localhost:8000`.
 
-You don't need to embed a video player. Just point a project's lightbox link at a
-video URL and it plays inline when clicked:
+*(Alternatively, you can just double-click the `index.html` file to open it directly in your browser!)*
 
-```html
-<div class="portfolio-links">
-  <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" data-gallery="portfolioGallery"
-    class="portfolio-lightbox"><i class="bx bx-image"></i></a>
-  ...
-</div>
-```
+---
 
-This works with YouTube/Vimeo links, or a local `.mp4` file placed in
-`assets/img/projectPics/`. The thumbnail `<img>` above it is still a normal static
-image — just a nice-looking frame from the video works well.
+## 🌐 Deploying to GitHub Pages (For Free)
 
-## Running it locally
+If you fork this repository and want to host your own version of it for free using GitHub Pages, follow these steps:
 
-No build step needed, it's plain HTML/CSS/JS. Just open `index.html` in a browser,
-or serve the folder:
+### Step 1: Push to GitHub
+If you haven't already, initialize git, commit your files, and push them to a new repository on your GitHub account:
 
 ```bash
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
-
-## Publishing on GitHub Pages
-
-1. Create a new GitHub repo named exactly `YOUR_USERNAME.github.io`.
-2. Push everything in this folder to the `main` (or `master`) branch.
-3. In the repo's **Settings → Pages**, set the source branch to `main`/root.
-4. Your site will be live at `https://YOUR_USERNAME.github.io` within a minute or two.
-
-```bash
-cd myportfolio
 git init
 git add .
-git commit -m "Initial portfolio"
+git commit -m "Initial portfolio commit"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io.git
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 git push -u origin main
 ```
 
-## Credits
+### Step 2: Enable GitHub Pages
+1. Go to your repository on GitHub.com.
+2. Click on the **Settings** tab (the gear icon near the top right).
+3. On the left sidebar, scroll down and click on **Pages**.
+4. Under the "Build and deployment" section, find the **Source** dropdown and select `Deploy from a branch`.
+5. Under the **Branch** dropdown, select your `main` (or `master`) branch, leave the folder as `/root`, and click **Save**.
 
-Template structure based on the free "iPortfolio" Bootstrap template
-(vendor libraries: Bootstrap, AOS, GLightbox, Isotope, Swiper, Typed.js, Boxicons —
-all included in `assets/vendor/`, unmodified, under their original open-source licenses).
+Wait about 1-2 minutes, refresh the page, and GitHub will provide you with a live link to your website!
+
+---
+
+## 📝 Customization Guide
+
+If you are using this as a base for your own portfolio, here is what you need to edit:
+- **`index.html`:** This is the main file. Search for the text you want to change (like names, skills, and about paragraphs) and replace it. 
+- **Adding Images:** Drop your images into the `assets/img/` folder and update the file paths (`src="..."`) in the HTML file.
+- **Videos:** The portfolio supports inline video popups! Just link a YouTube, Vimeo, or local `.mp4` file in the lightbox anchor tag (`href="..."`).
+
+## 📄 Credits
+The layout and structure of this portfolio are heavily customized from the free open-source "iPortfolio" Bootstrap template. All vendor libraries (Bootstrap, AOS, GLightbox, Isotope, Swiper, Typed.js, Boxicons) are included in `assets/vendor/` under their respective open-source licenses.
