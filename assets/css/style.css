@@ -227,6 +227,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 991px) {
+  html {
+    font-size: 85%;
+  }
   #hero {
     background-image: url("../img/background%20for%20phone.png") !important;
     background-size: cover !important;
@@ -234,8 +237,8 @@ h1, h2, h3, h4, h5, h6 {
     background-attachment: scroll !important;
   }
   #hero h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 32px;
     padding-left: 0;
     padding-right: 15px;
     text-align: right;
@@ -247,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
   }
   #hero p span {
-    font-size: 24px;
+    font-size: 20px;
     text-align: right;
   }
 }
