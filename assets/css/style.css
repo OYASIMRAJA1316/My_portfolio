@@ -228,8 +228,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 768px) {
   #hero {
+    background-image: url("../img/background%20for%20phone.png") !important;
     background-size: cover !important;
-    background-position: center left !important;
+    background-position: center center !important;
+    background-attachment: scroll !important;
   }
   #hero h1 {
     font-size: 32px;
