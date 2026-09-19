@@ -221,9 +221,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.9), 0px 0px 15px rgba(0, 0, 0, 0.8);
 }
-@media (min-width: 1024px) {
+/* Fix for iOS and Tablets breaking on fixed backgrounds */
+@media (max-width: 1199px) {
   #hero {
-    /* background-attachment: fixed removed to prevent extreme zooming */
+    background-attachment: scroll !important;
+  }
+}
+@supports (-webkit-touch-callout: none) {
+  #hero {
+    background-attachment: scroll !important;
   }
 }
 @media (max-width: 991px) {
